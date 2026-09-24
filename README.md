@@ -95,15 +95,32 @@ Model-generated captions were evaluated using BLEU and ROUGE-L metrics.
 
 | Metric | Score |
 |---|---:|
-| BLEU-1 | ADD SCORE |
-| BLEU-2 | ADD SCORE |
-| BLEU-3 | ADD SCORE |
-| BLEU-4 | ADD SCORE |
-| ROUGE-L | ADD SCORE |
+| BLEU-1 | 0.1879 |
+| BLEU-2 | 0.0258 |
+| BLEU-3 | 0.0116 |
+| BLEU-4 | 0.0081 |
+| ROUGE-L | 0.2464 |
 
 BLEU evaluates n-gram overlap between generated and reference captions,
 while ROUGE-L evaluates sequence similarity using the longest common
 subsequence.
+
+### Evaluation Interpretation
+
+The model achieved a BLEU-1 score of 0.1879 and a ROUGE-L score of
+0.2464, indicating partial word-level and sequence-level overlap between
+generated and reference captions.
+
+The substantially lower BLEU-2, BLEU-3, and BLEU-4 scores indicate that
+the model has difficulty generating longer matching word sequences.
+Qualitative examples also show that some generated captions are repetitive
+or grammatically incomplete.
+
+These results highlight the limitations of training a CNN-LSTM captioning
+model on a relatively small 5,000-sample subset with greedy decoding and
+a single reference caption per image. They also provide a baseline for
+future improvements such as attention mechanisms, beam-search decoding,
+larger training datasets, and Transformer-based caption generation.
 
 ## Example Predictions
 
