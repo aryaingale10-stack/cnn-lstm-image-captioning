@@ -1,0 +1,33 @@
+
+CNN-LSTM Image Captioning Results
+=================================
+
+Dataset
+-------
+Total Samples: 5000
+Training Samples: 4762
+Validation Samples: 238
+
+Model
+-----
+Encoder: ResNet-152
+Decoder: LSTM
+Embedding Size: 256
+Hidden Size: 512
+Vocabulary Size: 1266
+Epochs: 10
+
+Training Results
+----------------
+Initial Training Loss: 3.9771
+Final Training Loss: 2.6052
+Initial Validation Loss: 3.4642
+Final Validation Loss: 2.9403
+
+Caption Evaluation
+------------------
+BLEU-1: 0.1879
+BLEU-2: 0.0258
+BLEU-3: 0.0116
+BLEU-4: 0.0081
+ROUGE-L: 0.2464
