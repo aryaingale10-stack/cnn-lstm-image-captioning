@@ -1,0 +1,27 @@
+# Large datasets
+train-images/
+val-images/
+*.zip
+*.jsonl
+
+# Trained model checkpoints
+*.pth
+*.pt
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS files
+.DS_Store
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
