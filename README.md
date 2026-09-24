@@ -192,21 +192,49 @@ to reproduce the model.
 
 ## Running the Project
 
-Clone the repository:
+### 1. Clone the repository
 
-    git clone https://github.com/YOUR-USERNAME/cnn-lstm-image-captioning.git
+```bash
+git clone https://github.com/aryaingale10-stack/cnn-lstm-image-captioning.git
+cd cnn-lstm-image-captioning
+```
 
-Install the required dependencies:
+### 2. Install dependencies
 
-    pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
-Open the Jupyter notebook:
+### 3. Start Jupyter Notebook
 
-    jupyter notebook image_captioning.ipynb
+```bash
+jupyter notebook
+```
 
-The notebook contains the complete pipeline for dataset preparation,
-image preprocessing, vocabulary creation, model training, evaluation,
-and caption generation.
+### 4. Open the notebook
+
+Open:
+
+`image_captioning.ipynb`
+
+Run the notebook cells sequentially.
+
+The notebook performs the complete pipeline:
+
+1. Downloads and loads the caption annotations.
+2. Selects 5,000 image-caption samples.
+3. Creates training and validation splits.
+4. Downloads the corresponding Open Images.
+5. Builds the caption vocabulary.
+6. Creates custom PyTorch Dataset and DataLoader objects.
+7. Loads the pretrained ResNet-152 encoder.
+8. Trains the LSTM caption decoder.
+9. Evaluates training and validation loss.
+10. Generates captions for unseen validation images.
+11. Evaluates caption quality using BLEU and ROUGE-L.
+
+> **Note:** Training images, validation images, pretrained weights, and trained model checkpoints are excluded from the repository because of their large file sizes. They are downloaded or generated locally when running the project.
+
 
 ## Limitations
 
