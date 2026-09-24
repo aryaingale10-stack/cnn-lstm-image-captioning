@@ -4,6 +4,17 @@ An end-to-end deep learning image captioning system that automatically
 generates natural-language descriptions for images using a pretrained
 ResNet-152 CNN encoder and an LSTM decoder.
 
+## Project Highlights
+
+- Built an end-to-end image captioning pipeline combining computer vision and NLP.
+- Used transfer learning with a pretrained ResNet-152 CNN for visual feature extraction.
+- Implemented an LSTM decoder in PyTorch for sequential caption generation.
+- Trained and validated the pipeline on 5,000 image-caption samples.
+- Built a custom vocabulary, tokenization pipeline, Dataset, and DataLoader.
+- Evaluated generated captions using BLEU-1 through BLEU-4 and ROUGE-L.
+- Achieved BLEU-1 of 0.1879 and ROUGE-L of 0.2464.
+- Analyzed model limitations using quantitative metrics and qualitative prediction examples.
+  
 ## Overview
 
 Image captioning combines computer vision and natural language processing.
@@ -172,6 +183,13 @@ larger training datasets, and Transformer-based caption generation.
     └── models/
         └── Trained model checkpoints are stored locally
 
+### Model Checkpoints
+
+Trained model checkpoints are not stored in this repository because of
+their large file sizes. The notebook contains the complete model
+architecture, training pipeline, evaluation workflow, and code required
+to reproduce the model.
+
 ## Running the Project
 
 Clone the repository:
@@ -210,6 +228,14 @@ Potential improvements include:
 - Multiple reference captions per image
 - Additional caption-quality metrics such as CIDEr and METEOR
 - Interactive deployment using Streamlit or Gradio
+
+## Project Context
+
+This project originated as an image-captioning programming assignment and
+was subsequently expanded into a portfolio project with a larger
+5,000-sample training set, quantitative BLEU and ROUGE-L evaluation,
+saved prediction examples, reproducibility documentation, and structured
+GitHub project documentation.
 
 ## Author
 
